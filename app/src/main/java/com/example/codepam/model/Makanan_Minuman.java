@@ -22,5 +22,5 @@ public class Makanan_Minuman implements Serializable {
     public String created_at;
     public String updated_at;
     public int jumlah = 1;
-    public boolean selected;
+    public boolean selected = true;
 }

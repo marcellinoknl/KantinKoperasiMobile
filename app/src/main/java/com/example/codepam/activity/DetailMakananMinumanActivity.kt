@@ -9,10 +9,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.codepam.R
 import com.example.codepam.Room.MyDatabase
 import com.example.codepam.helper.Helper
 import com.example.codepam.model.Makanan_Minuman
+import com.example.codepam.util.Config
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import io.reactivex.Observable
@@ -70,7 +72,9 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
             }
         }
         btn_toKeranjang.setOnClickListener{
-//            startActivity(Intent(this,))
+        val intent = Intent("event:keranjang")
+            LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
+            onBackPressed()
         }
     }
     fun insert(){
@@ -129,7 +133,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
 
         tv_stockmakananminuman.text = makananminuman.stock
 
-        val img ="http://192.168.100.11/PAM-Kantin_Koperasi_Web/public/images/MakananMinuman/"+ makananminuman.file_foto
+        val img = Config.makananminumanUrl+ makananminuman.file_foto
         Picasso.get()
             .load(img)
             .placeholder(R.drawable.product)

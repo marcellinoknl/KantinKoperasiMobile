@@ -13,6 +13,7 @@ import com.example.codepam.R
 import com.example.codepam.activity.DetailMakananMinumanActivity
 import com.example.codepam.helper.Helper
 import com.example.codepam.model.Makanan_Minuman
+import com.example.codepam.util.Config
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import java.text.NumberFormat
@@ -43,7 +44,7 @@ class AdapterMakananMinuman(var activity: Activity, var data:ArrayList<Makanan_M
         holder.tvNama.text= data[position].nama_produk
         holder.tvHarga.text= Helper().gantiRupiah(data[position].harga)
 
-        val image ="http://192.168.100.11/PAM-Kantin_Koperasi_Web/public/images/MakananMinuman/"+data[position].file_foto
+        val image = Config.makananminumanUrl+data[position].file_foto
         Picasso.get()
             .load(image)
             .placeholder(R.drawable.product)

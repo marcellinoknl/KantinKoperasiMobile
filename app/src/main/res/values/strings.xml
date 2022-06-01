@@ -60,7 +60,9 @@
     <string name="_3_minuman_berat">3 : Minuman Berat</string>
     <string name="_4_minuman_ringan">4 : Minuman Ringan</string>
     <string name="_1">1</string>
-
+    <string name="totall">Total</string>
+    <string name="select_all">Select All</string>
+    <string name="pilih_semua">Pilih Semua</string>
 
 
 </resources>

@@ -1,13 +1,13 @@
 package com.example.codepam
 
-import android.content.Intent
-import android.content.SharedPreferences
+import android.content.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.codepam.activity.LoginActivity
 import com.example.codepam.activity.MasukActivity
 import com.example.codepam.fragment.AkunFragment
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private var statusLogin = false
 
     private lateinit var s:SharedPref
+    private var  dariDetail : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +40,14 @@ class MainActivity : AppCompatActivity() {
         setUpBottomNav()
 
         s = SharedPref(this)
+        LocalBroadcastManager.getInstance(this).registerReceiver(pesan, IntentFilter("event:keranjang"))
+
+    }
+
+    val pesan : BroadcastReceiver = object : BroadcastReceiver(){
+        override fun onReceive(p0: Context?, p1: Intent?) {
+            dariDetail = true
+        }
 
     }
 
@@ -96,5 +105,13 @@ class MainActivity : AppCompatActivity() {
         menuItem.isChecked = true
         fm.beginTransaction().hide(active).show(fragment).commit()
         active = fragment
+    }
+
+    override fun onResume() {
+        if(dariDetail){
+            dariDetail = false
+            callFargment(1,fargmentKeranjang)
+        }
+        super.onResume()
     }
 }

@@ -1,4 +1,5 @@
 import com.example.codepam.app.ApiService
+import com.example.codepam.util.Config
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -7,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 object ApiConfig {
-    private const val BASE_URL = "http://192.168.100.11/PAM-Kantin_Koperasi_Web/public/api/"
+    private const val BASE_URL = Config.baseUrl+"api/"
     private val client: Retrofit
         get() {
             val gson = GsonBuilder()
