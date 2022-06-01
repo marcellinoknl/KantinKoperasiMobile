@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/bg_btn_keranjang.xml" value="0.188" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/bg_tambah.xml" value="0.154" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/btn_bg_beli.xml" value="0.188" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/btn_bg_bulet.xml" value="0.154" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.154" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/ic_baseline_delete_24_orange.xml" value="0.154" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.188" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/drawable/ic_profile.xml" value="0.18" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout-v23/activity_register.xml" value="0.264" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_detail_makanan_minuman.xml" value="0.264" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_main.xml" value="0.18840579710144928" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_main2.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_masuk.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/activity_register.xml" value="0.176" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/fragment_akun.xml" value="0.4" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/fragment_keranjang.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/item_keranjang.xml" value="0.264" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/item_makananminuman.xml" value="0.17119565217391305" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/toolbar.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/layout/toolbar_custom.xml" value="0.27447916666666666" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/mipmap-anydpi-v26/bg_btn_keranjang.xml" value="0.137" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/mipmap-anydpi-v26/bg_btn_keranjang_round.xml" value="0.137" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.137" />
+        <entry key="..\:/AAA_IT DEL/Semester 4/PAM/Proyek/CODE1/app/src/main/res/xml/config_network.xml" value="0.27447916666666666" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/drawable/bg_btn_google.xml" value="0.1095" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/drawable/bg_btn_login1.xml" value="0.1095" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.1095" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/activity_main2.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/activity_masuk.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/activity_register.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/fragment_akun.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/fragment_keranjang.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/item_barang.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/item_makananminuman.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/item_ruangan.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/layout/item_slider.xml" value="0.17552083333333332" />
+        <entry key="..\:/SEMESTER 4/Pengembangan Aplikasi Mobile (PAM_/TUGAS BESAR/PIKS/CODE1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

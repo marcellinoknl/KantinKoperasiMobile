@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Kantin-Koperasi IT Del</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="akun">Akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="fragmentkeranjang">Keranjang</string>
+    <string name="fragmentakun">Akun</string>
+    <string name="cari_produk_disini">Cari produk disini</string>
+    <string name="apa_yang_ingin_anda_cari">Apa yang ingin Anda cari?</string>
+    <string name="jenis_produk">Jenis Produk</string>
+    <string name="makanan_dan_minuman">Makanan dan Minuman</string>
+    <string name="nama_makanan_dan_minuman">Nama Makanan dan Minuman</string>
+    <string name="rp_0">Rp.0</string>
+    <string name="nama_barang">Barang</string>
+    <string name="ruangan">Ruangan</string>
+    <string name="selamat_datang_di">Selamat Datang di</string>
+    <string name="kantin_koperasi_it_del">Kantin Koperasi IT Del</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="no_ktp">No.KTP</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="password">Password</string>
+    <string name="atau_masuk_dengan">atau masuk dengan</string>
+    <string name="daftarkan_akun_anda_segera">DAFTARKAN AKUN ANDA SEGERA!</string>
+    <string name="ataumasuk">ATAU</string>
+    <string name="google">Google</string>
+    <string name="atau_masuk_dengan2">ATAU MASUK DENGAN</string>
+    <string name="halo_deltizen">Halo Deltizen</string>
+    <string name="profile_saya">PROFILE SAYA</string>
+    <string name="nama_mahasiswa">Nama Mahasiswa</string>
+    <string name="nomor_telepon_mahasiswa">Nomor Telepon Mahasiswa</string>
+    <string name="email_mahasiswa">Email Mahasiswa</string>
+    <string name="no_ktp_mahasiswa">No KTP Mahasiswa</string>
+    <string name="ubah_profile">Ubah Profile</string>
+    <string name="kop_kan_it_del">KOP-KAN IT DEL</string>
+    <string name="kananpanah"><![CDATA[>]]></string>
+    <string name="keranjang_saya">Keranjang Saya</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="log_out">Log out</string>
+    <string name="stock">Stock</string>
+    <string name="jenis_makanan_minuman">Jenis Makanan/Minuman</string>
+    <string name="makanan_berat">Makanan Berat</string>
+    <string name="_10">10</string>
+    <string name="pesan_makanan_minuman">Pesan Makanan/Minuman</string>
+    <string name="marcellinoknk_gmail_com">marcellinoknk@gmail.com</string>
+    <string name="dibuat_oleh">Dibuat Oleh</string>
+    <string name="nama_makanan_minuman">Nama Makanan/Minuman</string>
+    <string name="nb">NB:</string>
+    <string name="_1_makanan_berat">1 : Makanan Berat</string>
+    <string name="_2_makanan_ringan">2 : Makanan Ringan</string>
+    <string name="_3_minuman_berat">3 : Minuman Berat</string>
+    <string name="_4_minuman_ringan">4 : Minuman Ringan</string>
+    <string name="_1">1</string>
+
+
+
+</resources>
