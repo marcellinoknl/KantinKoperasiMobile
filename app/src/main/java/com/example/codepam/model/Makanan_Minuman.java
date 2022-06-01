@@ -13,7 +13,7 @@ public class Makanan_Minuman implements Serializable {
     @ColumnInfo(name = "idTb")
     public int idTb;
 
-    public int id;
+    public int produk_id;
     public String nama_produk;
     public String stock;
     public int harga;

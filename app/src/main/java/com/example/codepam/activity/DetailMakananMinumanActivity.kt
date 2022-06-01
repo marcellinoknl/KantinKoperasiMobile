@@ -52,7 +52,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
 
     private fun mainButton() {
         btn_keranjang.setOnClickListener {
-            val data = myDb.daoKeranjang().getMakananMinuman(makananminuman.id)
+            val data = myDb.daoKeranjang().getMakananMinuman(makananminuman.produk_id)
 
             if(data == null){
                 insert()
@@ -64,6 +64,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
             val listNote = myDb.daoKeranjang().getAll() // get All data
             for(note :Makanan_Minuman in listNote){
                 println("-----------------------")
+                println(note.produk_id)
                 println(note.nama_produk)
                 println(note.harga)
             }
@@ -108,7 +109,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
 
     private fun getInfo() {
         val data = intent.getStringExtra("extra")
-        makananminuman = Gson().fromJson<Makanan_Minuman>(data, Makanan_Minuman::class.java)
+        makananminuman = Gson().fromJson(data, Makanan_Minuman::class.java)
 
         // set Value
         tv_nama.text = makananminuman.nama_produk

@@ -27,6 +27,7 @@ class KeranjangFragment : Fragment() {
         init(view)
         mainButton()
         displayMakananMinuman()
+
         return view
     }
 
@@ -47,6 +48,7 @@ class KeranjangFragment : Fragment() {
         rv_makananminuman.adapter = AdapterKeranjang(requireActivity(),lisMakananMinuman)
         rv_makananminuman.layoutManager = layoutManager
     }
+
 
     private fun mainButton(){
         btnDelete.setOnClickListener{
