@@ -12,6 +12,13 @@
     <color name="register">#0A4EF8</color>
     <color name="warnabg">#DD4600</color>
     <color name="warnabg2">#0EB8CD</color>
+    <color name="merah">#FB0303</color>
+    <color name="keranjangmakananminuman">#D89E0E</color>
+    <color name="keranjangbarangdansnack">#0DEAEA</color>
+    <color name="keranjangpulsa">#4FF110</color>
+    <color name="menunggu">#E6B400</color>
+    <color name="batal">#FF0000</color>
+    <color name="selesai">#008EFF</color>
 
 
 </resources>

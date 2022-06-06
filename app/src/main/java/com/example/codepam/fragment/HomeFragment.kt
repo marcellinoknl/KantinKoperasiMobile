@@ -38,6 +38,7 @@ class HomeFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_home, container, false)
         init(view)
         getMakananMinuman()
+        getBarang()
 
 
 
@@ -52,6 +53,24 @@ class HomeFragment : Fragment() {
                 if(res.success==1){
                     listMakananMinuman = res.produks
                     displayMakananMinuman()
+                }
+            }
+
+            override fun onFailure(call: Call<ResponModel>, t: Throwable) {
+                //handle ketika gagal
+
+            }
+        })
+    }
+    private var listBarang:ArrayList<Barang> = ArrayList()
+    fun getBarang(){
+        ApiConfig.instanceRetrofit.getBarang().enqueue(object :
+            Callback<ResponModel> {
+            override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
+                val res = response.body()!!
+                if(res.success==1){
+                    listBarang = res.barangs
+                    displayBarang()
                 }
             }
 
@@ -77,18 +96,19 @@ class HomeFragment : Fragment() {
         rvMakanMinuman.adapter = AdapterMakananMinuman(requireActivity(),listMakananMinuman )
         rvMakanMinuman.layoutManager = layoutManager
 
-        val layoutManager2 = LinearLayoutManager(activity)
-        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
-//
-//        rvBarang.adapter = AdapterBarang(arrBarang)
-//        rvBarang.layoutManager = layoutManager2
-//
-//        val layoutManager3 = LinearLayoutManager(activity)
-//        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
-//
-//        rvRuangan.adapter = AdapterRuangan(arrRuangan)
-//        rvRuangan.layoutManager = layoutManager3
     }
+
+    fun displayBarang(){
+
+
+        val layoutManager = LinearLayoutManager(activity)
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
+
+        rvBarang.adapter = AdapterBarang(requireActivity(),listBarang )
+        rvBarang.layoutManager = layoutManager
+
+    }
+
 
     fun init(view: View){
         vpSlider = view.findViewById(R.id.vp_slider)
@@ -97,111 +117,5 @@ class HomeFragment : Fragment() {
         rvRuangan = view.findViewById(R.id.rv_ruangan)
     }
 
-//    val arrMakanMinum: ArrayList<Makanan_Minuman>get(){
-//        val arr = ArrayList<Makanan_Minuman>()
-//        val p1 = Makanan_Minuman()
-//        p1.nama_produk = "Nasi Goreng Spesial"
-//        p1.harga = "Rp.25.000"
-//        p1.gambar = R.drawable.nasigoreng
-//
-//        val p2 = Makanan_Minuman()
-//        p2.nama = "Sate"
-//        p2.harga = "Rp.15.000"
-//        p2.gambar = R.drawable.sate
-//
-//        val p3 = Makanan_Minuman()
-//        p3.nama = "Minuman bersoda"
-//        p3.harga = "Rp.5.000"
-//        p3.gambar = R.drawable.soda
-//
-//        val p4 = Makanan_Minuman()
-//        p4.nama = "Jus Mentimun"
-//        p4.harga = "Rp.5.000"
-//        p4.gambar = R.drawable.jus
-//
-//        val p5 = Makanan_Minuman()
-//        p5.nama = "Pillows"
-//        p5.harga = "Rp.7.000"
-//        p5.gambar = R.drawable.pillows
-//
-//        arr.add(p1)
-//        arr.add(p2)
-//        arr.add(p3)
-//        arr.add(p4)
-//        arr.add(p5)
-//
-//        return arr
-//    }
-//
-//    val arrBarang: ArrayList<Barang>get(){
-//        val arr = ArrayList<Barang>()
-//        val p1 = Barang()
-//        p1.nama = "Pensil"
-//        p1.harga = "Rp.4.000"
-//        p1.gambar = R.drawable.pensil
-//
-//        val p2 = Barang()
-//        p2.nama = "Pulpen"
-//        p2.harga = "Rp.5.000"
-//        p2.gambar = R.drawable.pulpen
-//
-//        val p3 = Barang()
-//        p3.nama = "Penghapus"
-//        p3.harga = "Rp.3.000"
-//        p3.gambar = R.drawable.penghapus
-//
-//        val p4 = Barang()
-//        p4.nama = "Double Folio"
-//        p4.harga = "Rp.5.000"
-//        p4.gambar = R.drawable.folio
-//
-//        val p5 = Barang()
-//        p5.nama = "Buku Tulis"
-//        p5.harga = "Rp.6.000"
-//        p5.gambar = R.drawable.bukutulis
-//
-//        arr.add(p1)
-//        arr.add(p2)
-//        arr.add(p3)
-//        arr.add(p4)
-//        arr.add(p5)
-//
-//        return arr
-//    }
-//
-//    val arrRuangan: ArrayList<Ruangan>get(){
-//        val arr = ArrayList<Ruangan>()
-//        val p1 = Ruangan()
-//        p1.nama = "Ruangan Rapat"
-//        p1.harga = "Rp.4.000"
-//        p1.gambar = R.drawable.pensil
-//
-//        val p2 = Ruangan()
-//        p2.nama = "Pulpen"
-//        p2.harga = "Rp.5.000"
-//        p2.gambar = R.drawable.pulpen
-//
-//        val p3 = Ruangan()
-//        p3.nama = "Penghapus"
-//        p3.harga = "Rp.3.000"
-//        p3.gambar = R.drawable.penghapus
-//
-//        val p4 = Ruangan()
-//        p4.nama = "Double Folio"
-//        p4.harga = "Rp.5.000"
-//        p4.gambar = R.drawable.folio
-//
-//        val p5 = Ruangan()
-//        p5.nama = "Buku Tulis"
-//        p5.harga = "Rp.6.000"
-//        p5.gambar = R.drawable.bukutulis
-//
-//        arr.add(p1)
-//        arr.add(p2)
-//        arr.add(p3)
-//        arr.add(p4)
-//        arr.add(p5)
-//
-//        return arr
-//    }
+
 }

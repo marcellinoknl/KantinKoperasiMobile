@@ -1,6 +1,8 @@
 package com.example.codepam.app
 
+import com.example.codepam.model.CheckoutMakanan
 import com.example.codepam.model.ResponModel
+import com.example.codepam.model.TransaksiMakananMinuman
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.*
@@ -27,31 +29,36 @@ interface ApiService {
 //        @Field("fcm") fcm: String
     ): Call<ResponModel>
 
+
+    @POST("transaksi")
+    fun transaksi(
+        @Body data: TransaksiMakananMinuman
+    ): Call<ResponModel>
+
     @GET("makananminuman")
     fun getMakananMinuman(): Call<ResponModel>
+
+    @GET("barang")
+    fun getBarang(): Call<ResponModel>
+
+    @POST("transaksi")
+    fun transaksi(
+        @Body data: CheckoutMakanan
+    ): Call<ResponModel>
 
 //    @POST("chekout")
 //    fun chekout(
 //        @Body data: Chekout
 //    ): Call<ResponModel>
 
-//    @FormUrlEncoded
-//    @POST("cost")
-//    fun ongkir(
-//        @Header("key") key: String,
-//        @Field("origin") origin: String,
-//        @Field("destination") destination: String,
-//        @Field("weight") weight: Int,
-//        @Field("courier") courier: String
-//    ): Call<ResponOngkir>
 
-//    @GET("chekout/user/{id}")
-//    fun getRiwayat(
-//        @Path("id") id: Int
-//    ): Call<ResponModel>
-//
-//    @POST("chekout/batal/{id}")
-//    fun batalChekout(
-//        @Path("id") id: Int
-//    ): Call<ResponModel>
+    @GET("transaksi/user/{id}")
+    fun getRiwayat(
+        @Path("id") id: Int
+    ): Call<ResponModel>
+
+    @POST("transaksi/batal/{id}")
+    fun batalChekout(
+        @Path("id") id: Int
+    ): Call<ResponModel>
 }

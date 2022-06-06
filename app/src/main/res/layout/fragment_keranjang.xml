@@ -21,14 +21,6 @@
             android:textSize="16dp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/btn_delete"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/ic_baseline_delete_24" />
 
     </RelativeLayout>
 
@@ -89,7 +81,7 @@
                 android:background="@color/warnabg2"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Bayar"
+                android:text="@string/bayarrr"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />

@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Codepam"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity.DetailTransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RiwayatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailBarangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FormPemesananMakananMinuman"
+            android:exported="false" />
+        <activity
             android:name=".activity.DetailMakananMinumanActivity"
             android:exported="false" />
         <activity
@@ -31,6 +46,10 @@
             android:name=".activity.MasukActivity"
             android:exported="false" />
         <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.DetailKeranjangMakananMinuman" />
+        <activity android:name=".activity.ListDataPemesanan" />
+        <activity android:name=".activity.TambahDataPemesanan" />
+        <activity android:name=".activity.SuccessActivity" />
     </application>
 
 </manifest>

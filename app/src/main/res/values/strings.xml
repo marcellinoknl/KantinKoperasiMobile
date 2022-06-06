@@ -63,6 +63,45 @@
     <string name="totall">Total</string>
     <string name="select_all">Select All</string>
     <string name="pilih_semua">Pilih Semua</string>
+    <string name="bayarrr">Bayar</string>
+    <string name="form_pemesanan">FORM PEMESANAN</string>
+    <string name="nama_penerima">Nama Penerima</string>
+    <string name="nomor_teleponn">Nomor Telepon</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="note_pesanan">Note Pesanan</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="inputan_harus_sesuai_dengan_total_pembayaran">*Inputan harus sesuai dengan total pembayaran</string>
+    <string name="kirim_pembayaran">Kirim Pembayaran</string>
+    <string name="_5000">5000</string>
+    <string name="keranjang_barang">Keranjang Barang</string>
+    <string name="nama_barangg">Nama Barang</string>
+    <string name="koperasi_dan_kantin_it_del">Koperasi Dan Kantin IT Del</string>
+    <string name="jenis_barang">Jenis Barang</string>
+    <string name="atksas">ATK</string>
+    <string name="marcellinoknl_gmail_com1">marcellinoknl@gmail.com</string>
+    <string name="_1_snack">1. Snack</string>
+    <string name="_2_peralatan_olahraga">2. Peralatan Olahraga</string>
+    <string name="_3_peralatan_kebersihan">3. Peralatan Kebersihan</string>
+    <string name="_4_atk">4. ATK</string>
+    <string name="pesan_barang_sekarang">Pesan Barang Sekarang</string>
+    <string name="keranjang_makanan_dan_minuman">KERANJANG MAKANAN DAN MINUMAN</string>
+    <string name="keranjang_barang_dan_snack">KERANJANG BARANG DAN SNACK</string>
+    <string name="keranjang_pulsa">KERANJANG PULSA</string>
+    <string name="data_pemesanan_makanan_dan_minuman">Data Pemesanan Makanan dan Minuman</string>
+    <string name="isi_data_pemesanan_makanan_dan_minuman_anda">* Isi Data Pemesanan Makanan dan Minuman Anda</string>
+    <string name="anda_belum_menambahkan_deskripsi_pemesanan">Anda belum menambahkan deskripsi pemesanan</string>
+    <string name="isi_tambahkan_data_pemesanan">Isi/Tambahkan Data Pemesanan</string>
+    <string name="angkatan">Angkatan*</string>
+    <string name="nama_penerimaaa">Nama Penerima*</string>
+    <string name="simpan_data_pemesan">Simpan Data Pemesan</string>
+    <string name="niim_penerima">NIIM Penerima*</string>
+    <string name="nn">Nomor telepon*</string>
+    <string name="prodiiii">Prodi*</string>
+    <string name="d4trplll">D4TRPL</string>
+    <string name="angkatannnn">Angkatan</string>
+    <string name="bayarrrr">Bayar</string>
+    <string name="metode_pembayaran">Metode Pembayaran</string>
+    <string name="virtual_account_bca">Virtual Account BCA</string>
 
 
 </resources>

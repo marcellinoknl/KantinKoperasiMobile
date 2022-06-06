@@ -148,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:text="@string/marcellinoknk_gmail_com"
+                        android:text="@string/marcellinoknl_gmail_com1"
                         android:textColor="@color/warnabg"
                         android:textSize="13sp" />
 
@@ -237,6 +237,7 @@
                 android:background="@drawable/btn_bg_beli">
 
                 <TextView
+                    android:id="@+id/pesanmakananminuman"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"

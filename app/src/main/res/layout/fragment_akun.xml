@@ -115,13 +115,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="@string/ubah_profile"
+                                android:text="Daftar Keranjang Makanan/Minuman"
                                 android:textColor="@color/black" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="200dp"
+                                android:layout_marginStart="50dp"
                                 android:layout_marginLeft="10dp"
                                 android:text="@string/kananpanah"
                                 android:textColor="@color/black" />
@@ -151,13 +151,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="@string/ubah_password"
+                                android:text="Daftar Keranjang Barang"
                                 android:textColor="@color/black" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="180dp"
+                                android:layout_marginStart="125dp"
                                 android:layout_marginLeft="10dp"
                                 android:text="@string/kananpanah"
                                 android:textColor="@color/black" />
@@ -167,7 +167,9 @@
 
                     </RelativeLayout>
 
+
                     <RelativeLayout
+                        android:id="@+id/btn_riwayat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -185,22 +187,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="@string/keranjang_saya"
+                                android:text="Riwayat Belanja Makanan/Minuman"
                                 android:textColor="@color/black" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="180dp"
+                                android:layout_marginStart="60dp"
                                 android:layout_marginLeft="10dp"
                                 android:text="@string/kananpanah"
                                 android:textColor="@color/black" />
                         </LinearLayout>
-
-
                     </RelativeLayout>
 
-
                     <RelativeLayout
+                        android:id="@+id/btn_riwayat_barang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -218,19 +219,22 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
-                                android:text="Riwayat Belanja Saya"
+                                android:text="Riwayat Belanja Barang"
                                 android:textColor="@color/black" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="145dp"
+                                android:layout_marginStart="135dp"
                                 android:layout_marginLeft="10dp"
                                 android:text="@string/kananpanah"
                                 android:textColor="@color/black" />
                         </LinearLayout>
 
 
+
                     </RelativeLayout>
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

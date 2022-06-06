@@ -16,8 +16,6 @@ import com.example.codepam.model.Makanan_Minuman
 import com.example.codepam.util.Config
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
-import java.text.NumberFormat
-import java.util.*
 import kotlin.collections.ArrayList
 
 class AdapterMakananMinuman(var activity: Activity, var data:ArrayList<Makanan_Minuman>): RecyclerView.Adapter<AdapterMakananMinuman.Holder>() {

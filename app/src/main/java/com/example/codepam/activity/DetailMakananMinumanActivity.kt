@@ -22,7 +22,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_detail_makanan_minuman.*
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.toolbar_custom.*
 
 class DetailMakananMinumanActivity : AppCompatActivity() {
@@ -31,6 +30,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
     lateinit var tv_harga:TextView
     lateinit var tv_jenismakananminuman:TextView
     lateinit var tv_stockmakananminuman:TextView
+    lateinit var tv_pesanmakananminuman:TextView
     lateinit var image:ImageView
     lateinit var toolbar:Toolbar
     lateinit var makananminuman:Makanan_Minuman
@@ -43,6 +43,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
         tv_harga = findViewById(R.id.tv_harga)
         tv_jenismakananminuman = findViewById(R.id.tv_jenismakananminuman)
         tv_stockmakananminuman = findViewById(R.id.tv_stockmakananminuman)
+        tv_pesanmakananminuman = findViewById(R.id.pesanmakananminuman)
         image = findViewById(R.id.image)
         toolbar = findViewById(R.id.toolbar)
         myDb = MyDatabase.getInstance(this)!! // call database
@@ -62,7 +63,8 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
                 data.jumlah = data.jumlah + 1
                 update(data)
             }
-
+            makananminuman.stock -= 1
+            tv_stockmakananminuman.text = makananminuman.stock.toString()
             val listNote = myDb.daoKeranjang().getAll() // get All data
             for(note :Makanan_Minuman in listNote){
                 println("-----------------------")
@@ -73,6 +75,11 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
         }
         btn_toKeranjang.setOnClickListener{
         val intent = Intent("event:keranjang")
+            LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
+            onBackPressed()
+        }
+        pesanmakananminuman.setOnClickListener {
+            val intent = Intent("event:keranjang")
             LocalBroadcastManager.getInstance(this).sendBroadcast(intent)
             onBackPressed()
         }
@@ -131,7 +138,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
         }
         tv_jenismakananminuman.text = datajenismakananminuman.toString()
 
-        tv_stockmakananminuman.text = makananminuman.stock
+        tv_stockmakananminuman.text = makananminuman.stock.toString()
 
         val img = Config.makananminumanUrl+ makananminuman.file_foto
         Picasso.get()
@@ -142,10 +149,7 @@ class DetailMakananMinumanActivity : AppCompatActivity() {
             .into(image)
 
         // setToolbar
-        setSupportActionBar(toolbar)
-        supportActionBar!!.title = makananminuman.nama_produk
-        supportActionBar!!.setDisplayShowHomeEnabled(true)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        Helper().setToolbar(this,toolbar,makananminuman.nama_produk)
     }
 
     override fun onSupportNavigateUp(): Boolean {

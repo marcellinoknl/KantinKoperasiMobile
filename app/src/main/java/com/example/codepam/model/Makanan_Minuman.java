@@ -15,7 +15,7 @@ public class Makanan_Minuman implements Serializable {
 
     public int produk_id;
     public String nama_produk;
-    public String stock;
+    public int stock;
     public int harga;
     public String file_foto;
     public int id_levelproduk;
