@@ -6,12 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.example.codepam.MainActivity
 import com.example.codepam.R
+import com.example.codepam.activity.BookingRuanganActivity
+import com.example.codepam.activity.DetailKeranjangMakananMinuman
 import com.example.codepam.adapter.AdapterBarang
 import com.example.codepam.adapter.AdapterMakananMinuman
 import com.example.codepam.adapter.AdapterRuangan
@@ -20,6 +23,7 @@ import com.example.codepam.model.Barang
 import com.example.codepam.model.Makanan_Minuman
 import com.example.codepam.model.ResponModel
 import com.example.codepam.model.Ruangan
+import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,6 +33,7 @@ class HomeFragment : Fragment() {
     lateinit var rvMakanMinuman: RecyclerView
     lateinit var rvBarang: RecyclerView
     lateinit var rvRuangan: RecyclerView
+    lateinit var btn_bookingruangan: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,7 +45,7 @@ class HomeFragment : Fragment() {
         getMakananMinuman()
         getBarang()
 
-
+        BookingRuangan()
 
         return view
     }
@@ -81,6 +86,12 @@ class HomeFragment : Fragment() {
         })
     }
 
+    fun BookingRuangan(){
+        btn_bookingruangan.setOnClickListener {
+            startActivity(Intent(requireActivity(),BookingRuanganActivity()::class.java))
+        }
+    }
+
     fun displayMakananMinuman(){
         val arrSlider = ArrayList<Int>()
         arrSlider.add(R.drawable.nasigoreng)
@@ -100,7 +111,6 @@ class HomeFragment : Fragment() {
 
     fun displayBarang(){
 
-
         val layoutManager = LinearLayoutManager(activity)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
@@ -114,7 +124,8 @@ class HomeFragment : Fragment() {
         vpSlider = view.findViewById(R.id.vp_slider)
         rvMakanMinuman = view.findViewById(R.id.rv_makananminuman)
         rvBarang = view.findViewById(R.id.rv_barang)
-        rvRuangan = view.findViewById(R.id.rv_ruangan)
+        btn_bookingruangan = view.findViewById(R.id.btn_bookingruangan)
+
     }
 
 

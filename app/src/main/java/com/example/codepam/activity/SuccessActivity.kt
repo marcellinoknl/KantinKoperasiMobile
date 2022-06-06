@@ -72,7 +72,7 @@ class SuccessActivity : AppCompatActivity() {
         tv_namaPenerima.text = bank.penerima
         image_bank.setImageResource(bank.image)
 
-        nominal = Integer.valueOf(transaksi.total_transfer) + transaksi.kode_unik
+        nominal = Integer.valueOf(transaksi.total_transfer) 
         tv_nominal.text = Helper().gantiRupiah(nominal)
     }
 

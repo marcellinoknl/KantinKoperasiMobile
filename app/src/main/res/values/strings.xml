@@ -102,6 +102,14 @@
     <string name="bayarrrr">Bayar</string>
     <string name="metode_pembayaran">Metode Pembayaran</string>
     <string name="virtual_account_bca">Virtual Account BCA</string>
+    <string name="nama_peminjam">Nama Peminjam</string>
+    <string name="nim_peminjam">NIM Peminjam</string>
+    <string name="angkatan_penerima">Angkatan Penerima</string>
+    <string name="nama_ruangan">Nama Ruangan</string>
+    <string name="jadwal_pemakaian">Jadwal Pemakaian</string>
+    <string name="keterangan_pemakaian">Keterangan Pemakaian</string>
+    <string name="simpan_data_ruangan">Simpan Data Ruangan</string>
+    <string name="klik_untuk_meminjam_ruangan">Klik untuk meminjam Ruangan</string>
 
 
 </resources>

@@ -18,7 +18,20 @@ interface ApiService {
         @Field("nohp") nohp: String,
         @Field("email") email: String,
         @Field("password") password: String,
-//        @Field("fcm") fcm: String
+
+    ): Call<ResponModel>
+
+    @FormUrlEncoded
+    @POST("bookingruangan")
+    fun bookingruangan(
+        @Field("nama") nama: String,
+        @Field("prodi") prodi: String,
+        @Field("nim") nim: String,
+        @Field("angkatan") angkatan: String,
+        @Field("namaruangan") namaruangan: String,
+        @Field("jadwal") jadwal: String,
+        @Field("keterangan") keterangan: String,
+
     ): Call<ResponModel>
 
     @FormUrlEncoded

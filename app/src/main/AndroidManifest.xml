@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Codepam"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity.BookingRuanganActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.DetailTransaksiActivity"
             android:exported="false" />
         <activity

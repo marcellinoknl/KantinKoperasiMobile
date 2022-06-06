@@ -72,7 +72,7 @@ class DetailKeranjangMakananMinuman : AppCompatActivity() {
         transaksi.total_harga = ""+totalHarga
         transaksi.name = datapemesanan.name
         transaksi.phone = datapemesanan.phone
-        transaksi.total_transfer = totalHarga.toString()
+        transaksi.total_transfer = (totalHarga*totalItem).toString()
         transaksi.produks = produks
 
         val json = Gson().toJson(transaksi,TransaksiMakananMinuman::class.java)

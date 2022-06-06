@@ -45,6 +45,7 @@ class AdapterRiwayat(var data: ArrayList<Transaksi>, var listener: Listeners) : 
 
         val name = a.details[0].produk.nama_produk
         holder.tvNama.text = name
+        val total = a.total_transfer
         holder.tvHarga.text = Helper().gantiRupiah(a.total_transfer)
         holder.tvJumlah.text = a.total_item + " Items"
         holder.tvStatus.text = a.status

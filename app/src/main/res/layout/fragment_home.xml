@@ -99,10 +99,12 @@
                     android:textSize="15dp"
                     android:textColor="@color/purple_700"/>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_ruangan"
+                <Button
+                    android:id="@+id/btn_bookingruangan"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/klik_untuk_meminjam_ruangan"/>
+
             </LinearLayout>
 
         </LinearLayout>
