@@ -53,6 +53,7 @@
         <activity android:name=".activity.ListDataPemesanan" />
         <activity android:name=".activity.TambahDataPemesanan" />
         <activity android:name=".activity.SuccessActivity" />
+        <activity android:name=".activity.BeliPulsaActivity" />
     </application>
 
 </manifest>

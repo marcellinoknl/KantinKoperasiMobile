@@ -110,6 +110,16 @@
     <string name="keterangan_pemakaian">Keterangan Pemakaian</string>
     <string name="simpan_data_ruangan">Simpan Data Ruangan</string>
     <string name="klik_untuk_meminjam_ruangan">Klik untuk meminjam Ruangan</string>
+    <string name="no_handphonee">No Handphone</string>
+    <string name="jenis_kartu_telepon">Jenis Kartu Telepon</string>
+    <string name="pembelian_pulsa">Pembelian Pulsa</string>
+    <string name="klik_untuk_melakukan_pembelian_pulsa">Klik untuk melakukan Pembelian Pulsa</string>
+    <string name="nama_pembeli_pulsa">Nama Pembeli Pulsa</string>
+    <string name="nim_pembeli_pulsa">NIM Pembeli Pulsa</string>
+    <string name="kirimkan_permintaan">Kirimkan Permintaan</string>
+    <string name="nominal_pembelian_pulsa">Nominal Pembelian Pulsa</string>
+    <string name="harga_pembelian_pulsa_nominal_rp_2000">*Harga Pembelian Pulsa : Nominal + Rp.2000</string>
+    <string name="pembayaran_melalui_dana_082166861855">Pembayaran melalui DANA : 082166861855</string>
 
 
 </resources>

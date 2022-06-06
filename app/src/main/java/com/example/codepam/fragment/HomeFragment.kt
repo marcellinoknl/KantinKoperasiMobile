@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.example.codepam.MainActivity
 import com.example.codepam.R
+import com.example.codepam.activity.BeliPulsaActivity
 import com.example.codepam.activity.BookingRuanganActivity
 import com.example.codepam.activity.DetailKeranjangMakananMinuman
 import com.example.codepam.adapter.AdapterBarang
@@ -34,6 +35,7 @@ class HomeFragment : Fragment() {
     lateinit var rvBarang: RecyclerView
     lateinit var rvRuangan: RecyclerView
     lateinit var btn_bookingruangan: Button
+    lateinit var btn_belipulsa: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -90,6 +92,9 @@ class HomeFragment : Fragment() {
         btn_bookingruangan.setOnClickListener {
             startActivity(Intent(requireActivity(),BookingRuanganActivity()::class.java))
         }
+        btn_belipulsa.setOnClickListener {
+            startActivity(Intent(requireActivity(),BeliPulsaActivity()::class.java))
+        }
     }
 
     fun displayMakananMinuman(){
@@ -125,6 +130,7 @@ class HomeFragment : Fragment() {
         rvMakanMinuman = view.findViewById(R.id.rv_makananminuman)
         rvBarang = view.findViewById(R.id.rv_barang)
         btn_bookingruangan = view.findViewById(R.id.btn_bookingruangan)
+        btn_belipulsa = view.findViewById(R.id.btn_belipulsa)
 
     }
 

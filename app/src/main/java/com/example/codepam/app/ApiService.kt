@@ -35,6 +35,18 @@ interface ApiService {
     ): Call<ResponModel>
 
     @FormUrlEncoded
+    @POST("belipulsa")
+    fun belipulsa(
+        @Field("nama") nama: String,
+        @Field("prodi") prodi: String,
+        @Field("nim") nim: String,
+        @Field("angkatan") angkatan: String,
+        @Field("nohp") nohp: String,
+        @Field("kartu") kartu: String,
+
+        ): Call<ResponModel>
+
+    @FormUrlEncoded
     @POST("login")
     fun login(
         @Field("email") email: String,
